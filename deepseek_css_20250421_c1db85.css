@@ -1,0 +1,74 @@
+/* يمكنك إضافة الأنماط العامة هنا إذا كنت تريد فصلها عن HTML */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 100px; /* لمنع التداخل مع الفوتر الثابت */
+}
+
+h1, h2 {
+    color: #4CAF50;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.team-member {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.team-member img {
+    max-width: 150px;
+    border-radius: 50%;
+    float: right;
+    margin-left: 20px;
+}
+
+/* مسح التعويم بعد عناصر الفريق */
+.team-member::after {
+    content: "";
+    display: table;
+    clear: both;
+}
